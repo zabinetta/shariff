@@ -1,0 +1,17 @@
+/* font awesome mit variablen Pfad- und Versionsangaben
+* zur einfachen Aktualisierung der font-awsome-Dateien
+*
+* beim Einbinden muessen die Variablen
+* @entypo-font-path und @entypo-version
+* definiert werden
+*/
+@font-face {
+font-family: 'entypo';
+src: url('@{entypo-font-path}/fontawesome-webfont.eot?v=@{entypo-version}');
+src: url('@{entypo-font-path}/fontawesome-webfont.eot?#iefix&v=@{entypo-version}') format('embedded-opentype'),
+url('@{entypo-font-path}/fontawesome-webfont.woff?v=@{entypo-version}') format('woff'),
+url('@{entypo-font-path}/fontawesome-webfont.ttf?v=@{entypo-version}') format('truetype'),
+url('@{entypo-font-path}/fontawesome-webfont.svg?v=@{entypo-version}#entyporegular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
